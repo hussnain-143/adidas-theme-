@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+<!-- 404 page -->
 <section class = "container-fluid">
     <div class="container">
         <div class="row justify-content-center m-5 p-5">
@@ -10,6 +11,7 @@ get_header();
         </div>
     </div>
 </section>
+
 <?php
 get_footer();
 ?>
