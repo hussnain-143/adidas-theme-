@@ -1,0 +1,12 @@
+@media screen and (max-width: 1199px) {
+    .header-menu , .wp-block-search__inside-wrapper {
+        display: none;
+    }
+    .header-3-logo-container .custom-logo{
+        margin-left: 0;
+    }
+    .footer-widget .widget_nav_menu  ul{
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+}
