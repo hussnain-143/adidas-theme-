@@ -1,0 +1,434 @@
+/* 
+Theme Name : Adidas
+Theme URI : https://www.google.com
+Description: A clean, responsive theme for WordPress. responsive, clean, blogger, writer, blog, theme, wordpress, website, online, publishing,
+Author: Hussnain Ahmed
+Author URI : https://www.google.com
+Tags: responsive, clean, blogger, writer, blog, theme, wordpress, website, online, publishing,
+Version: 1.0
+Text Domain: adidas
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #004726; /* Dark Green */
+    --secondary-color: #1e5a21; /* Slightly lighter green */
+    --secondary-light-color: #358539; /* Slightly lighter green */
+    --accent-color: #ffffff; /* White */
+    --background-color: #f4f4f4; /* Light grey */
+    --text-color: #000000; /* Black */
+    --highlight-color: #f39c12; /* Orange */
+    --button-color: #e74c3c; /* Red */
+    --link-color: #3498db; /* Blue */
+}
+
+/* Apply root variables to the body */
+body {
+    background-color: var(--primary-color); /* Light grey for better readability */
+    color: var(--text-color); /* Black text for contrast */
+    font-family: Arial, sans-serif;
+}
+/* 
+===============header start============= 
+57 - 159
+===============header end============= 
+===============Home start=============
+160 - 276
+===============Home end===============
+===============About start============
+277 - 292
+=============== About End============= 
+===============Post start=============
+293 - 305
+===============Post end===============
+===============Single start=============
+306 - 380
+===============Single end==============
+==============Footer start=============
+381 - 434
+===============Footer end==============
+*/
+/* ===============header============= */
+/* ===============header - 1 ============= */
+.header-1{
+    background-color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+.site-logo{
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+.custom-btn {
+    display: inline-block;
+    background-color: var(--secondary-color); /* Button background color */
+    color: var(--accent-color); /* Button text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; /* Optional for uppercase text */
+    position: relative;
+    display: inline-block;
+    transform: skew(-30deg); /* Creates the parallelogram shape */
+    border: none;
+    transition: all 1s ease-in-out; /* Smooth transition for hover effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Hover Effect */
+.custom-btn:hover {
+    background-color: var(--accent-color); /* Button changes to accent color on hover */
+    color: var(--secondary-color); /* Text changes to primary color */
+}
+/* ===============header - 2 ============= */
+.header-2{
+    background-color: var(--secondary-color);
+}
+.header-menu {
+    min-height: 100%;
+}
+.header-menu ul{
+    display: flex;
+    list-style: none;
+    align-items:center;
+    justify-content: space-between;
+    min-height: 100%;
+    margin: 0;
+}
+.header-menu a{
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase; /* Optional for uppercase text */
+    position: relative;
+    display: inline-block;
+    transform: skew(-30deg); /* Creates the parallelogram shape */
+    border: none;
+    padding:  18px 10px;
+    transition: all .5s ease-in-out; /* Smooth transition for hover effect */
+}
+.current-menu-item a{
+    color: var(--highlight-color);
+}
+.header-menu  li :hover{
+    background-color: var(--secondary-light-color);
+    transform: skew(-30deg); /* Creates the parallelogram shape */
+}
+.header-sidebar input{
+    max-width: 18rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--accent-color); 
+    margin: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.header-sidebar li{
+    display: inline-block;
+}
+/* ===============header - 3 ============= */
+.header-3{
+    background-color: var(--secondary-light-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.header-page-title{
+    color: var(--accent-color);
+    font-size: 700;
+}
+.header-3-logo {
+    background-color: var(--accent-color);
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+}
+.header-3-logo-container{
+    width: 100%;
+    padding: 18px 0;
+}
+.header-3-logo-container .custom-logo{
+    width: 6rem !important;
+    height: 3rem !important;
+    object-fit: cover;
+    margin-left: 3rem;
+}
+/* =============== header end ============= */
+/* =============== Home Page ============= */
+.d-block{
+    object-fit: cover;
+    min-height: 27rem !important;
+    max-height: 27rem !important;
+    transition: all 1s ease-in-out;
+}
+.d-block:hover{
+    transform: scale(1.1);
+}
+/* =====main side bar =========*/
+.home-sidebar{
+    background-color: var(--secondary-light-color);
+}
+.home-sidebar h1{
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    font-size: 1rem;
+}
+.home-sidebar  ol li{
+    color: var(--accent-color);
+    font-size: .8rem;
+    padding: .3rem;
+}
+/* ====== home Sidebar ========= */
+.home-slider{
+    object-fit: cover;
+    max-width: 10rem !important;
+    min-height: 10rem !important;
+    margin: .5rem;
+    border: .5rem solid var(--secondary-color);
+    transform: skew(-20deg);
+    transition: all 1s ease;
+}
+.home-slider:hover{
+    transform: skew(-20deg) scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 20px;   
+}
+.home-slider-end{
+    margin:  1rem 0;
+    margin-top: 3rem;
+    border-bottom: 2px solid gray;
+}
+.post-card{
+    width: 13rem !important;
+    border: none;
+    margin: 1rem !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-light-color);
+    transition: all .5s ease;
+}
+.post-card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 20px;
+}
+.post-card-text-area{
+    line-height: 1rem;
+}
+.post-card-title{
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    padding: .3rem 1rem ;
+}
+.post-card-text +p{
+    color: var(--accent-color);
+    padding:0 1rem ;
+    font-size: .9rem;
+    margin-bottom: 4rem;
+}
+.post-card-btn{
+    padding: .5rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+}
+.post-card-btn a{
+    color: var(--accent-color);
+}
+/*  ======= large Card====== */
+.large-card {
+    width: 96% !important;
+    height: 13rem !important;
+    display: flex !important;
+    overflow: hidden; margin-bottom: 
+    2rem !important;
+}
+.large-card .post-card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.large-card-2 .post-card-body{
+    flex-direction: row-reverse;
+}
+.large-card img{
+    width: 70% !important;
+    height: 14rem !important;
+    object-fit: cover;
+    margin: 0 !important;
+    border-radius: 0;
+}
+.large-card img{
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.large-card-2 img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%);
+}
+.large-card .post-card-text-area{
+    width: 25rem !important;
+}
+.large-card .post-card-btn{
+    opacity: 0 !important;
+    top:0;
+    bottom: 0;
+}
+/*  =======> Home end <======== */
+/* ===========> About Page <============ */
+.about-page{
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4,
+.about-page h5,
+.about-page h6 {
+    font-style: italic;
+    font-size: 2rem;
+}
+/* ===========> About Page end  <============ */
+/* ===========> Post Page  <============ */
+.main-post .post-card{
+    width: 20rem !important;
+    margin: 4rem !important;
+} 
+.main-post .post-card-title{
+    font-size: 2rem;
+}
+.main-post .post-card-text +p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+/* ===========> Post Page end <============ */
+/* ===========> Single Page <============ */
+.single-post-card{
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+.single-card-title{
+    color: var(--accent-color);
+    font-weight: 700;
+}
+.wp-block-image img {
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    transition: all 0.4s ease;
+}
+.wp-block-image img:hover {
+    transform: scale(1.1) rotate(-5deg) skew(-5deg);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 20px;
+}
+.single-comment{
+    color: var(--accent-color);
+}
+.logged-in-as a{
+    color: var(--secondary-light-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.comment-form-comment{
+    display: flex !important;
+    gap: 1rem;
+}
+.comment-form-comment textarea{
+    padding: .5rem !important;
+}
+.submit{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    width: 10rem;
+    padding: .5rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 6rem;
+    transition: all .5s ease-in;
+    border: 1px solid var(--accent-color);
+}
+.submit:hover{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.container .comment-list{
+    list-style: none;
+    color: var(--accent-color);
+}
+.container .comment-list a{
+    color: var(--accent-color);
+}
+.comment-body{
+    border: 1px solid var(--accent-color);
+    margin: .5rem;
+    padding: .5rem;
+}
+.comment-metadata{
+    margin: .5rem;
+}
+.parent {
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem;
+    margin: .5rem;
+}
+/* ============== Single page end <======== */
+/*  =======> Footer Section <======== */
+.footer-1-container {
+    padding: 1rem;
+    background-color: var(--secondary-light-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.footer-1-container h1{
+    color: var(--accent-color);
+}
+.footer-1-container label{
+    align-self:flex-start !important;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+.form-check-input{
+    background-color: var(--accent-color);
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.footer-1-container .footer-btn{
+    background-color: var(--primary-color) ;
+    color: var(--accent-color);
+    width: 10rem ;
+    border: none;
+    border-radius: 0;
+    padding: .3rem;
+    font-weight: 700;
+    transition: all 1.5s ease;
+}
+.footer-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color); 
+}
+.footer-2{
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.2);
+}
+.footer-widget ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+} 
+.footer-widget a{
+    margin: 0 1rem;
+    color: var(--accent-color);
+}
+.footer-widget #block-11 li{
+    height: 100% !important;
+}
+.footer-copy{
+    color: var(--accent-color);
+}
+/*  =======> Footer end <======== */
